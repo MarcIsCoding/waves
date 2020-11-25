@@ -1,0 +1,60 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  img {
+    height: 3rem;
+    cursor: pointer;
+  }
+  button {
+    outline: inherit;
+  }
+  h3 {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    cursor: default;
+  }
+}
+.btn-standard {
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+  &:hover {
+    background: rgb(65, 65, 65);
+  }
+}
+.btn-small {
+  display: none;
+  color: white;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid white;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+  &:hover {
+    background: rgb(65, 65, 65);
+  }
+}
+.btn-zero-text {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  button {
+    z-index: 10;
+  }
+  .btn-standard {
+    display: none;
+  }
+  .btn-small {
+    display: block;
+  }
+}
